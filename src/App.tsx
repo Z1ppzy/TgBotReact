@@ -1,27 +1,18 @@
-function App() {
+import Header from '../src/Components/header';
+
+export default function App() {
   return (
-    <div className='bg-slate-500 h-screen'>
-      <header>
-        <h1 className='text-2xl text-center'>Welcome to My Telegram App</h1>
-      </header>
-      <div className='px-4'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-          excepturi ratione saepe magni? Id, ullam? Rem sed natus consequatur
-          consectetur quam recusandae mollitia qui reiciendis ipsam assumenda
-          nulla pariatur maxime iste repellendus ullam, nostrum deleniti minus!
-          Aut, nulla voluptatum fuga nam similique eligendi doloribus saepe.
-          Repudiandae vel, quis aut beatae eveniet, eligendi reprehenderit
-          aperiam nisi voluptas minus debitis suscipit et! Ut aspernatur nobis
-          accusantium esse excepturi, laboriosam dolore voluptate facere?
-          Maiores labore dicta quisquam, commodi, deleniti nobis dolorum
-          consectetur omnis, officiis facere sed necessitatibus eligendi
-          incidunt enim itaque odit at exercitationem distinctio unde ullam
-          nesciunt pariatur voluptas. Maxime, perspiciatis ea.
-        </p>
+    <>
+      <div className='flex flex-col'>
+        <Header />
+        <div className='flex flex-col px-2 text-sm items-center'>
+          <h1 className='font-bold'>Информация о вашем профиле:</h1>
+          <p>Часов проведено: 1000 часов</p>
+          <p>Разрушено блоков: 10200 блоков</p>
+          <p>Убито игроков: 10 игроков</p>
+          <p>Пройдено блоков: 1000000 блоков</p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export default App;
